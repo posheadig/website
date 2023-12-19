@@ -63,7 +63,7 @@ body, h1, h2, h3, p, nav, footer {
     margin: 10px;
     border: 1px solid #ddd;
     padding: 10px;
-    width: 300px;
+    width: 300px;    
 }
 .gallery-item img {
     max-width: 100%;
@@ -73,14 +73,14 @@ body, h1, h2, h3, p, nav, footer {
 .main-content {
     display: flex;
     flex-direction: row;
-    max-width: 100%; /* Adjust as needed */
+    max-width: 100%; 
     margin: auto;
 }
 
 .sidebar {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #333;
-    background-color: #f8f8f8; /* Light grey background */
+    background-color: #f8f8f8; 
     padding: 20px;
     border-right: 1px solid #e1e1e1; /* Add a subtle border */
     width: 20%
@@ -157,7 +157,6 @@ body, h1, h2, h3, p, nav, footer {
 }
 
 
-/* Ensure all content is wrapped in a container for alignment */
 .container {
     width: 50%; /* This width should match the <hr> width */
     margin: auto; /* This centers the container */
@@ -165,32 +164,71 @@ body, h1, h2, h3, p, nav, footer {
 }
 
 .title-area, .nav-bar, .project-content {
-    width: 100%; /* Ensure the width matches the parent container */
+    width: 100%; 
 }
 
-/* Apply the same width to the horizontal rule for consistency */
 hr {
-    width: 100%; /* Match container width */
-    margin: auto; /* Center it within the container */
+    width: 100%; 
+    margin: auto; 
 }
-
 .project-title {
     font-size: 2em;
-    margin-top: 20px; /* Add top margin if needed */
-    text-align: left; /* Align to the left */
+    margin-top: 20px; 
+    text-align: left; 
 }
 
-/* Ensure other content matches the alignment */
+
 .project-description, .project-technical-overview, .back-to-portfolio {
     text-align: left;
 }
 
 .figure {
-    text-align: left; /* Center the image and caption */
+    text-align: left; 
 }
 
 .figcaption {
-    margin-top: 8px; /* Space above the caption */
-    font-style: italic; /* Italicize the caption text */
-    font-size: 0.8em; /* Make the caption text slightly smaller than the content text */
+    margin-top: 8px; 
+    font-style: italic;
+    font-size: 0.8em; 
+}
+
+a {
+    color: #268578;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #3366cc;
+}
+
+
+@media screen and (max-width: 768px) {
+    .sidebar, .gallery-item, .project-image-small {
+        width: 80%;
+        padding: 20px;
+        margin: 0 auto;
+        margin: 10px;
+    }
+    .content-area {
+        width: 100%; 
+        padding: 10px;
+    }
+    .about-info {
+        margin: 20px auto;
+        max-width: 90%;
+        text-align: left;
+        font-size: 18px;
+        color: #333;
+        line-height: 1.6;
+    }
+    .main-content, .gallery {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .container {
+        width: 90%; /* This width should match the <hr> width */
+        margin: auto; /* This centers the container */
+        padding: 0;
+    }
 }

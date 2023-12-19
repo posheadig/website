@@ -31,13 +31,13 @@
         <p>As an experimental framework, this general project navigates the complex interplay between ecosystems, technological systems, and financial models, viewing them as interconnected assemblages. 
             It promotes the development of experimental systems that are reflective, adaptive, and critical, rather than purely solution-driven.</p>    
         <br>
-        <h4>The project contains the following subs</h4><ul><li><p>Open Value: a blockchain SDK experimenting with information networks</p></li>
-        <li><p>Address Zero: artwork and program brute force attacking address zero on Etherum</p></li>
-        <li><p>IPFS-SQlite-Blockchain: a toolkit for fast reading sqlite files from IPFS with a virtual file system</p></li></ul>
+        <h4>The project contains the following subs</h4><ul><li><a href="#OV">Open Value: a blockchain SDK experimenting with information networks</a></li>
+        <li><a href="#zero">Address Zero: artwork and program brute force attacking address zero on Etherum</a></li>
+        <li><a href="#ipfs">IPFS-SQlite-Blockchain: a toolkit for fast reading sqlite files from IPFS with a virtual file system</a></li></ul>
     </div>
     <div class="project-description">
 <br><br><br><br>
-<h2>Open Value</h2>
+<h2 id="OV">Open Value</h2>
 <br>
 <p>During 2023 in partnership with the nonprofit, I developed a backend, solidity contracts, and SDK that enable the creation of a blockchain network where ERC20 contracts can be created and assigned accompanying data (in the form of a text string) on any chain. The ERC20 contract is immediately made to pair with a base currency (ETH), and initial liquidity is added thus creating the automated market maker K curve, using Uniswap V2 contracts.</p>
 <br>
@@ -64,7 +64,7 @@
 <br><p>The SDK is also setup to be connected to any external centralized database.</p>
 <br><p>Also my github repo for creating a simple GraphQL subgraph can be found <a href="https://github.com/posheadig/names" target="_blank">here</a>. It listens to the token and pair contract, and maintains a realtime list of token names, which can then be queried from the Graph node.</p>
 <br><br><br><br>
-<h2>Searching for Null: Ethereum's Address(0)</h2>
+<h2 id="zero">Searching for Null: Ethereum's Address(0)</h2>
 <br>
 <p>This is a brute force attack program that touches on themes of personal security, computational energy usage, and lore of nefarious programs that are and have been constantly running and can emerge at any momement sending effects to everday life.</p>
 <br><p>"Searching for Null" plunges into the enigma of Ethereum's 0x0000000000000000000000000000000000000000 address, a digital void that harbors 'burned' funds, where transfers are sent to throw away a key. This address, often metaphorically likened to a black hole, receives assets when owners opt to discard their access keys, effectively sending value into a state of absence.</p>
@@ -85,7 +85,7 @@
     <p class="figcaption">exhibition image<a href="https://thewrong.org/reversetarpit" target="_blank"> </a></p>
     </div>
 <br><br><br><br>
-<h2>Virtual File System for an SQlite File on IPFS</h2>
+<h2 id="ipfs">Virtual File System for an SQlite File on IPFS</h2>
 <br><p>ipfs-sqlite-blockchain github repository located <a href="https://github.com/posheadig/ipfs-sqlite-blockchain" target="_blank">here</a></p>
 <br><p>This is an offshoot of the fantastic projects by SQlite, <a href="https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/" target="_blank">Phiresky</a>, and recently the <a href=" https://news.ycombinator.com/item?id=28585208" target="_blank">LibGen-IPFS project.</a></p>
 <br><p>This toolkit takes the <a href="https://github.com/phiresky/sql.js-httpvfs" target="_blank">sql.js-httpvfs</a> repository and modifies it to read directly from IPFS, where it involves another step to launch an SQlite file that captures the current state of a blockchain network.</p>
