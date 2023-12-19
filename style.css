@@ -193,8 +193,8 @@ hr {
 }
 
 a {
-    color: #268578;
-    text-decoration: none;
+    color: #242a2a;
+    text-decoration:underline;
     transition: color 0.3s ease;
 }
 
