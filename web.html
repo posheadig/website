@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebSocket Data Viewer</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { margin-top: 20px; }
+        .data { margin-bottom: 10px; }
+        .key, .address, .cpuLoad, .attempts, .result { font-weight: bold; }
+        .wsData { overflow-y: scroll; max-height: 200px; border: 1px solid #ccc; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Live Zero Data</h1>
+    <div class="container">
+        <div class="data">CPU Load: <span class="cpuLoad">-</span></div>
+        <div class="data">Attempts: <span class="attempts">-</span></div>
+        <div class="data">Latest Private Key: <span class="key">-</span></div>
+        <div class="data">Latest Address: <span class="address">-</span></div>
+        <div class="data">Result: <span class="result">Waiting for data...</span></div>
+        <div class="data">WebSocket Data:</div>
+        <div class="wsData"></div>
+    </div>
+
+    <script>
+        const ws = new WebSocket('wss://hook.nulladdress.xyz:8080');
+        const maxMessages = 20; // Set maximum number of displayed messages
+        
+        ws.onmessage = (event) => {
+            const data = JSON.parse(event.data);
+            // Directly updating CPU load and attempts with every message
+            if (data.metrics) {
+                document.querySelector('.cpuLoad').textContent = data.metrics.cpuLoad.toFixed(2);
+                document.querySelector('.attempts').textContent = data.attempts;
+            }
+            // Updating private key and address with every message
+            if (data.privateKey && data.address) {
+                // Displaying the complete private key and address for real-time update effect
+                document.querySelector('.key').textContent = data.privateKey;
+                document.querySelector('.address').innerHTML = `<a href="https://etherscan.io/address/${data.address}" target="_blank">${data.address}</a>`;
+            }
+            // Handling success and failure messages
+            if (data.success) {
+                document.querySelector('.result').textContent = 'Success! Found the private key for the zero address: ' + data.privateKey;
+            } else if (data.failure) {
+                document.querySelector('.result').textContent = 'Another attempt made. No success yet.';
+            }
+            // Displaying the entire WebSocket data
+            const wsDataContainer = document.querySelector('.wsData');
+            const newDataElement = document.createElement('div');
+            newDataElement.textContent = JSON.stringify(data);
+            if (wsDataContainer.children.length >= maxMessages) {
+                wsDataContainer.removeChild(wsDataContainer.children[0]); // Remove the oldest message
+            }
+            wsDataContainer.appendChild(newDataElement);
+        };
+
+        ws.onopen = () => console.log('WebSocket connected');
+        ws.onclose = () => console.log('WebSocket disconnected');
+    </script>
+</body>
+</html>
