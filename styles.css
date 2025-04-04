@@ -1,243 +1,451 @@
-
-* {
+/* CSS Variables for theming */
+:root {
+    --bg-color: #f0f0f0;
+    --text-color: #333;
+    --sidebar-bg: #c1c1c1;
+    --sidebar-text: #141414;
+    --sidebar-active: #ffffff;
+    --link-color: #007bff;
+    --button-bg: #818181;
+    --button-hover-bg: #dddddd;
+  }
+  
+  /* Reset & Base Styles */
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body, html {
+  }
+  
+  html, body {
+    font-family: Helvetica, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     height: 100%;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-}
-
-#sidebar {
+  }
+  
+  /* Sidebar: use a sans-serif font to differentiate it from the main content */
+  #sidebar {
     position: fixed;
     left: 0;
     top: 0;
     width: 250px;
     height: 100%;
-    background-color: #c1c1c1;
+    background-color: var(--sidebar-bg);
     overflow-y: auto;
     padding: 20px;
     border-radius: 4px;
-}
-
-#sidebar h1 {
+    
+  }
+  
+  #sidebar h1 {
     color: #414141;
     margin: 0px 0;
 }
-
-#sidebar h3 {
+  #sidebar h3 {
     color: #414141;
-    margin: 0px 0;
     padding-top: 30px;
-}
-
-#sidebar ul {
+  }
+  
+  #sidebar ul {
     list-style: none;
-}
-
-#sidebar ul li {
+  }
+  
+  #sidebar li {
     margin: 10px 0;
-}
-
-#sidebar a {
-    color: #141414;
+  }
+  
+  #sidebar a {
+    color: var(--sidebar-text);
     text-decoration: none;
-    transition: color 0.2s ease-in-out; 
-}
-
-#sidebar a.active {
-    color: #ffffff;
+    transition: color 0.2s ease-in-out;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+  
+  #sidebar a.active {
+    color: var(--sidebar-active);
     font-weight: 700;
-}
-
-#sidebar a:hover {
+  }
+  
+  #sidebar a:hover {
     color: #fff;
     text-decoration: underline;
-}
-
-#content {
+  }
+  .sidebar-year {
+    font-size: 0.8em;
+    color: #555;
+  }
+  
+  
+  /* Main Content */
+  #content {
     margin-left: 250px;
     padding: 20px;
-}
-
-#content h1 {
-    color: #333;
+  }
+  
+  #content h1,
+  #content h3 {
+    color: var(--text-color);
     margin-bottom: 15px;
-}
-
-#content a {
-    color: #007bff;
+  }
+  
+  #content a {
+    color: var(--link-color);
     text-decoration: none;
-    margin-bottom: 15px;
     display: inline-block;
-}
-
-#content p {
+    margin-bottom: 15px;
+  }
+  
+  #content p {
     margin-top: 15px;
-}
-
-#content img {
+    line-height: 1.6;
+  }
+  
+  #content img {
     max-width: 100%;
     height: auto;
-    display:flex;
-    margin: 0px 0px;
-    border-radius: 4px;
-}
-
-#work-detail-content {
-    margin-left: 250px; 
-    padding: 20px;
-    overflow-y: auto;
-}
-
-#work-detail-content h1 {
-    color: #333;
-    margin-bottom: 20px;
-}
-
-#work-detail-content h3 {
-    color: #333;
-    margin-bottom: 20px; 
-    padding-top: 20px;
-}
-
-#work-detail-content a {
-    color: #007bff;
-    text-decoration: none;
-    margin-bottom: 20px; 
-    display: inline-block; 
-}
-
-#work-detail-content p {
-    margin-top: 20px;
-    line-height: 1.6;
-}
-
-.work-detail-image {
-    max-width: 100%; 
-    height: auto; 
     display: block;
-    margin: 20px auto; 
-    border-radius: 8px; 
-}
+    margin: 10px 0;
+    border-radius: 4px;
+  }
 
-#text-size-controls {
+    /* Display the year on a new line in work detail titles */
+    #content h3 .year {
+      display: block;
+      font-size: 0.8em;
+      color: #666;
+    }
+  
+  /* Text Size Controls */
+  #text-size-controls {
     position: fixed;
     top: 10px;
     right: 10px;
     z-index: 1000;
-}
-
-#text-size-controls button {
+  }
+  
+  #text-size-controls button {
     padding: 5px 10px;
     font-size: 14px;
-    background-color: #818181;
+    background-color: var(--button-bg);
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     outline: none;
-}
-
-#text-size-controls button:hover {
-    background-color: #dddddd;
-}
-
-.image-container {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-}
-
-.footnote {
-    margin-left: 10px;
-    font-size: 12px;
-    color: #666;
-}
-
-#menu-toggle {
-    display: none; 
+    margin-left: 5px;
+  }
+  
+  #text-size-controls button:hover {
+    background-color: var(--button-hover-bg);
+  }
+  
+  /* Menu Toggle Button */
+  #menu-toggle {
+    display: none;
     position: fixed;
     top: 20px;
     right: 20px;
-    z-index: 1001; 
+    z-index: 1001;
     background-color: #949494;
-    color: white; 
-    border: none; 
+    color: #fff;
+    border: none;
     border-radius: 5px;
     padding: 10px 15px;
     font-size: 18px;
-    cursor: pointer; 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
-}
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #menu-toggle:hover {
+    background-color: #0056b3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Image Container */
+  .image-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .footnote {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #666;
+  }
 
-#menu-toggle:hover {
-    background-color: #0056b3; 
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
-}
-
-#sidebar.active {
+  .cv-container {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+  }
+  
+  .cv-section {
+    margin-bottom: 1.5rem;
+    border: none;
+    padding: 0;
+  }
+  
+  .cv-heading {
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+    color: var(--text-color);
+  }
+  
+  .cv-list {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin: 0;
+  }
+  
+  .cv-item {
+    margin-bottom: 0.75rem;
+  }
+  
+  .cv-item-title {
+    font-weight: normal;
+  }
+  
+  .cv-item-sub {
+    font-style: italic;
+    margin-bottom: 0.25rem;
     display: block;
+  }
+  
+  .cv-item-date {
+    font-size: 0.875rem;
+    color: #666;
+  }
+  
+  .cv-item-desc,
+  .cv-item-festivals {
+    font-size: 0.95rem;
+    margin-top: 0.25rem;
+    display: block;
+  }
+  
+
+  
+
+/* Desktop Styles (apply when viewport is wider than 768px) */
+@media screen and (min-width: 769px) {
+  /* Sidebar: normal expanded state */
+  #sidebar {
+    overflow: visible;
+  }
+  /* Collapse Button inside sidebar */
+  #sidebar-collapse {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* placed inside the sidebar */
+    width: 30px;
+    height: 30px;
+    background-color: var(--button-bg);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+  }
+  #sidebar-collapse:hover {
+    background-color: var(--button-hover-bg);
+  }
+  #sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: var(--sidebar-bg);
+    overflow-y: auto;
+    padding: 20px;
+    border-radius: 4px;
+    transition: width 0.4s ease;
+  }
+  
+  /* Collapsed state: sidebar remains visible (narrow) */
+  #sidebar.collapsed {
+    width: 30px;
+    padding: 20px 5px; /* adjust horizontal padding */
+  }
+  
+  /* Main Content: shifted when sidebar expanded */
+  #content {
+    margin-left: 250px;
+    padding: 20px;
+    max-width: 800px;
+    transition: margin-left 0.4s ease;
+  }
+  /* When sidebar is collapsed, center main content */
+  #sidebar.collapsed ~ #content {
+    margin: 0 auto;
+  }
+  
+  /* When collapsed, on hover, expand back to full width */
+  #sidebar.collapsed:hover {
+    width: 250px;
+  }
 }
 
+/* Sidebar common styles */
+#sidebar h1 {
+  color: #414141;
+  margin: 0 0;
+}
+#sidebar h3 {
+  color: #414141;
+  padding-top: 30px;
+}
+#sidebar ul {
+  list-style: none;
+}
+#sidebar li {
+  margin: 10px 0;
+}
+#sidebar a {
+  color: var(--sidebar-text);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  white-space: normal;
+  word-wrap: break-word;
+}
+#sidebar a.active {
+  color: var(--sidebar-active);
+  font-weight: 700;
+}
+#sidebar a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.sidebar-year {
+  font-size: 0.8em;
+  color: #555;
+}
 
-@media screen and (max-width: 768px) {
-    body, html {
-        font-size: 16px; 
-    }
-    
-    #sidebar, #content, #work-detail-content {
-        padding: 10px; 
-    }
-    
-    #sidebar h1, #sidebar h3, #content h1, #content a, #content p, #work-detail-content h1, #work-detail-content h3, #work-detail-content a, #work-detail-content p {
-        font-size: 18px; 
-    }
-    
-    #sidebar ul li {
-        margin: 5px 0; 
-    }
-    
-    #work-detail-content p {
-        margin-top: 10px;
-    }
-    
-    #menu-toggle {
-        display: block;
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        z-index: 1001; 
-    }
+/* Main Content Elements */
+#content h1,
+#content h3 {
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+#content a {
+  color: var(--link-color);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+#content p {
+  margin-top: 15px;
+  line-height: 1.6;
+}
+#content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+/* Work detail year styling */
+#content h3 .year {
+  display: block;
+  font-size: 0.8em;
+  color: #666;
+}
 
-    #sidebar {
-        display: none;
-        width: 100%;
-        height: auto;
-        position: fixed; 
-        top: 0;
-        left: 0;
-        overflow-y: auto; 
-        z-index: 1000;
+/* Text Size Controls remain unchanged */
+#text-size-controls {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+#text-size-controls button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: var(--button-bg);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  margin-left: 5px;
+}
+#text-size-controls button:hover {
+  background-color: var(--button-hover-bg);
+}
+
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    html,
+    body {
+      font-size: 16px;
     }
-    
+  
+    #sidebar,
     #content {
-        margin-left: 0; 
+      padding: 10px;
     }
-    
-    #work-detail-content {
-        margin-left: 0; 
+  
+    #sidebar h1,
+    #sidebar h3,
+    #content h1,
+    #content a,
+    #content p {
+      font-size: 18px;
     }
-    
-    #content img, .work-detail-image {
-        width: 100%; 
-        height: auto;
-        margin: 10px 0; 
+  
+    #sidebar li {
+      margin: 5px 0;
     }
-    
-}
+  
+  /* Ensure the menu toggle button is on top */
+  #menu-toggle {
+    display: block;
+    z-index: 1100;
+  }
+  
+  /* Sidebar adjustments: initially hidden, show when active */
+  #sidebar {
+    display: none;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    z-index: 1000;
+    padding-top: 60px;
+    background-color: var(--sidebar-bg);
+  }
+  
+  #sidebar.active {
+    display: block;
+  }
+  
+  #content {
+    margin-left: 0;
+  }
+
+    #text-size-controls {
+        display: none;
+      }
+  }
+  
+  /* Styles specific to the WebSocket Data Viewer (if needed) */
+  .wsData {
+    overflow-y: scroll;
+    max-height: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  

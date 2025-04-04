@@ -1,0 +1,178 @@
+{
+    "name": "Patrick O'Shea",
+    "title": "Interdisciplinary Artist & Technologist",
+    "contact": {
+      "github": "https://github.com/posheadig",
+      "instagram": "https://www.instagram.com/patrick___oshea/",
+      "cv_pdf": "./assets/CV_simple.pdf"
+    },
+    "education": [
+      {
+        "degree": "MFA, Art & Technology Studies",
+        "institution": "School of the Art Institute of Chicago",
+        "location": "Chicago, IL",
+        "years": "2018–2020"
+      },
+      {
+        "degree": "BA, Anthropology",
+        "institution": "University of Vermont",
+        "location": "Burlington, VT",
+        "years": "2007–2015"
+      }
+    ],
+    "awards": [
+      {
+        "title": "New Artist Society Full Merit Fellowship",
+        "institution": "School of the Art Institute of Chicago",
+        "year": "2018–2020"
+      },
+      {
+        "title": "Student Leadership Award",
+        "institution": "School of the Art Institute of Chicago",
+        "year": "2020"
+      }
+    ],
+    "professional_experience": [
+      {
+        "role": "CoFounder / R&D",
+        "organization": "<a href='https://linktr.ee/collectivememoryai' target='_blank'>collective memory inc</a>",
+        "description": "Decentralized data layer/humanitarian documentation app",
+        "years": "2025-"
+      },
+      {
+        "role": "R&D",
+        "organization": "Open Value",
+        "description": "Decentralized financial instruments",
+        "years": "2023–2024"
+      },
+      {
+        "role": "Visiting Professor Fellow – AI & Design",
+        "organization": "China Academy of Art",
+        "years": "2023"
+      },
+      {
+        "role": "Product Manager",
+        "organization": "Agora Labs",
+        "description": "Web3 Decentralized Finance Startup",
+        "years": "2021–2023"
+      },
+      {
+        "role": "Guest Researcher",
+        "organization": "Texas Tech University",
+        "location": "Lubbock, TX",
+        "years": "2020–2021"
+      },
+      {
+        "role": "Freelance Consultant",
+        "description": "Software development, ethnography, writing, project management, geomorphology, archaeology, design, and fabrication",
+        "years": "2015–present"
+      }
+    ],
+    "teaching": [
+      {
+        "role": "Web3 Theory & Technologies",
+        "institution": "Shanghai University",
+        "year": "2022"
+      },
+      {
+        "role": "GIS & Mapping Ethics",
+        "institution": "Ohio State University",
+        "year": "2022"
+      },
+      {
+        "role": "Ethnography Workshop (COP26)",
+        "institution": "Glasgow School of Art",
+        "year": "2021"
+      },
+      {
+        "role": "Teaching Assistant",
+        "institution": "School of the Art Institute of Chicago",
+        "years": "2018–2020"
+      }
+    ],
+    "exhibitions": [
+      {
+        "title": "Reverse TarPit",
+        "institution": "Brooklyn Arts Cluster, New York, NY",
+        "year": "2024"
+      },
+      {
+        "title": "The Wrong Biennale – Onassis ONX Studio @ New Art City",
+        "institution": "Onassis ONX Studio, New York, NY",
+        "year": "2023"
+      },
+      {
+        "title": "The Fish Hotel / Chemical [Re]Actions",
+        "institution": "Goethe-Institut, Chicago, IL",
+        "year": "2021"
+      },
+      {
+        "title": "Ars Electronica Digital Gardens (co-curator/exhibitor)",
+        "institution": "Ars Electronica Digital Gardens, Linz / Virtual",
+        "year": "2020"
+      },
+      {
+        "title": "Messages from the Anthropocene",
+        "institution": "Flynndog Gallery, Burlington, VT",
+        "year": "2020"
+      },
+      {
+        "title": "ATS@50",
+        "institution": "SAIC, Chicago, IL",
+        "year": "2020"
+      },
+      {
+        "title": "NØ Exhibition",
+        "institution": "NoSchool, Nevers, France",
+        "year": "2019"
+      },
+      {
+        "title": "Future Conditions",
+        "institution": "SAIC, Chicago, IL",
+        "year": "2019"
+      },
+      {
+        "title": "New City Gallery",
+        "institution": "New City Gallery, Burlington, VT",
+        "year": "2017"
+      }
+    ],
+    "publications": [
+      {
+        "title": "Collectivity + Collaboration",
+        "publisher": "Southwest Contemporary Vol. 5",
+        "year": "2022"
+      }
+    ],
+    "residencies": [
+      {
+        "title": "NØSchool Nevers",
+        "year": "2019"
+      },
+      {
+        "title": "Vermont Studio Center",
+        "year": "2017"
+      }
+    ],
+"collaborations": [
+  {
+    "title": "The Cavalry (short film)",
+    "role": "Producer, Sound, Original Score. Director, Camera, Edit by <a href='https://alinaorlov.com' target='_blank'>Alina Orlov</a>",
+    "year": "2024",
+    "festivals": "World premiere at <a href='https://www.locarnofestival.ch/home.html' target='_blank'><strong>Locarno Film Festival</strong></a>, August 2024, <a href='https://www.locarnofestival.ch/festival/program/film.html?fid=d418c4f4-8aa7-485b-b8d4-4baeb1b851c1&eid=' target='_blank'>Pardi di Domani: Concorso Internazionale</a>.<br>North American premiere at <a href='https://viff.org/whats-on/viff24-modes-1/' target='_blank'><strong>Vancouver International Film Festival</strong></a>, 2024, Canada.<br>South American premiere at <a href='https://fidba.org/2024/peliculas/the-cavalry/' target='_blank'><strong>FIDBA International Documentary Film Festival</strong></a>, Buenos Aires, 2024.<br><a href='https://www.moma.org/calendar/events/10330' target='_blank'><strong>MoMA Doc Fortnight</strong></a>, New York City, February 22 &amp; 28, 2025 – <em>Doc Fortnight Shorts 1: Abstraction as Apprehension</em>.<br><a href='https://antimatter.squarespace.com/saturday-oct-26' target='_blank'><strong>Antimatter [media art]</strong></a>, 2024.<br><a href='https://www.filmfestbremen.com/en/movies/fears-innovation-shorts-3/' target='_blank'><strong>International Filmfest Bremen</strong></a>, 2025 – <em>Fears – Innovation Shorts #3</em>.<br><a href='https://cosmicraysfilmfest.com/2025-film-program-2/' target='_blank'><strong>COSMIC RAYS Film Festival</strong></a>, 2025 – <em>Program 2: Night Music</em>.<br><a href='https://agenda.ficcifestival.com/proyecciones/cavalry' target='_blank'><strong>Festival Internacional de Cine de Cartagena de Indias</strong></a>, 2025 - <em>Animation section</em>.<br><a href='https://www.portlandecofilmfest.org/bring-them-home' target='_blank'><strong>The Portland EcoFilm Festival</strong></a>, 2025."
+  },
+  {
+    "title": "Meandering Rio Commons",
+    "role": "Collaborator, data + mapping systems, 3D site, publication contributions",
+    "year": "2022",
+    "description": "Co-created with <a href='https://www.instagram.com/josevillanuevastudio/' target='_blank'>José Villanueva</a>, <a href='https://landarts.org/' target='_blank'>Land Arts of the American West</a>, and a broader research network. The project visualizes historical meanders of the Rio Grande / Rio Bravo river through a web-based 3D environment and open geographic data, and was featured in <a href='https://southwestcontemporary.com/rio-meander-map/' target='_blank'>Southwest Contemporary Vol. 5</a> and the publication <em>Al Río / To the River</em> by Zoe Leonard. <br><br><a href='https://posheadig.github.io/Rio-Meander-Website/' target='_blank'>Visit the online archive</a>."
+  },
+  {
+    "title": "COP26: Into the Oceanic",
+    "role": "Monitor and Ethnographer",
+    "year": "2021",
+    "description": "An immersive project documented at COP26 (Glasgow School of Art) examining the interplay of art, science, and activism in ocean conservation."
+  }
+]
+  }
+  
