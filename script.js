@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'Cyano-Bot',
         'DEM film'
       ],
-      Collaborations: ['The Cavalry (short film)', 'Meandering Rio Commons', 'COP26: Into the Oceanic'],
+      Collaborations: ['Satellite Image Exchange', 'The Cavalry (short film)', 'Meandering Rio Commons', 'COP26: Into the Oceanic'],
       'Early Works': ['LiDaR ShoreLINE', 'Hydro-Electro-Poetics', 'Archive Photogrammetry'],
       Writing: ['eniwetok', 'culvert blog']
     };
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function loadHomepage() {
       content.innerHTML = '';
       // Example: display featured work (adjust as needed)
-      populateMainContent('Bovine Weather Model', 'bovine');
+      populateMainContent('Satellite Image Exchange', 'satimgex');
     }
   
     // Load work details – reuse worksData if already fetched
@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // Populate homepage content (e.g., a featured work)
     function populateMainContent(title, workId) {
-      const imageUrl = `./assets/${workId}/2.png`;
+      const imageUrl = `./assets/${workId}/tv.gif`;
       const workLink = document.createElement('a');
       workLink.href = `#/work?work=${encodeURIComponent(title)}`;
   

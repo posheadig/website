@@ -91,10 +91,10 @@
   }
   
   #content a {
+    display: inline;       /* no longer an inline-block */
+    margin-bottom: 0;      /* remove extra vertical gap */
     color: var(--link-color);
     text-decoration: none;
-    display: inline-block;
-    margin-bottom: 15px;
   }
   
   #content p {
@@ -233,7 +233,18 @@
     display: block;
   }
   
+  #content > a > img.img {
 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1200px;
+    object-fit: contain;
+    z-index: -1;
+    margin: 0;      /* override any existing margin */
+    padding: 0;     /* override any existing padding */
+  }
   
 
 /* Desktop Styles (apply when viewport is wider than 768px) */
@@ -342,7 +353,6 @@
   color: var(--link-color);
   text-decoration: none;
   display: inline-block;
-  margin-bottom: 15px;
 }
 #content p {
   margin-top: 15px;
@@ -382,6 +392,18 @@
 }
 #text-size-controls button:hover {
   background-color: var(--button-hover-bg);
+}
+#content > a > img.img {
+
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: 1200px;
+  object-fit: contain;
+  z-index: -1;
+  margin: 0;      /* override any existing margin */
+  padding: 0;     /* override any existing padding */
 }
 
   /* Responsive Styles */
@@ -448,4 +470,16 @@
     border: 1px solid #ccc;
     padding: 10px;
   }
-  
+  #content > a > img.img {
+
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1200px;
+    object-fit: contain;
+    z-index: -1;
+    margin: -10px;      /* override any existing margin */
+    padding: 0;     /* override any existing padding */
+    margin-left: -10px;
+  }
