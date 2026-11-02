@@ -1,0 +1,17 @@
+{
+  "title": "Patrick O'Shea",
+  "url": "https://www.patrickoshea.art",
+  "description": "Patrick O'Shea is an artist and technologist working with geospatial data, computer vision and archives — across artworks, documentary film and research infrastructure for verified, geolocated imagery.",
+  "ogImage": "/media/satellite-image-exchange/tv2.webp",
+  "email": "3735397436333b373d1a683b3f322935392a",
+  "links": [
+    { "label": "GitHub", "url": "https://github.com/posheadig" },
+    { "label": "Instagram", "url": "https://www.instagram.com/patrick___oshea/" }
+  ],
+  "nav": [
+    { "label": "Work", "url": "/work/" },
+    { "label": "Research", "url": "/research/" },
+    { "label": "About", "url": "/about/" },
+    { "label": "CV", "url": "/cv/" }
+  ]
+}

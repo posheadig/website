@@ -1,0 +1,89 @@
+---
+layout: base.njk
+title: Research
+permalink: /research/
+bodyClass: page-research
+description: Research and engineering by Patrick O'Shea — verified imagery, geolocation, 3D reconstruction, geospatial data and computer vision.
+---
+<header class="page-header">
+  <h1>Research</h1>
+  <p class="lead">Alongside the artworks I build systems that collect, verify and interpret images of the world: where a picture was taken, when, by whom, and whether independent sources agree. Much of this work is proprietary, so this page sets out the areas I work in and points to what is public.</p>
+</header>
+
+<a class="feature" href="/work/collective-memory/">
+  <img src="/media/collective-memory/coverage.webp" alt="World map of the Collective Memory corpus, with clips from 174 countries" loading="eager">
+  <div>
+    <p class="kicker">Co-founder · Research &amp; development</p>
+    <h2>Collective Memory</h2>
+    <p>A distributed, contributor-led archive of geolocated observation: more than 18 million clips from 174 countries, including sustained documentation in Gaza and Ukraine. I lead research and development, from field capture to ethically sourced datasets with contributor remuneration.</p>
+    <span class="more">Read more →</span>
+  </div>
+</a>
+
+<section aria-labelledby="areas">
+  <h2 id="areas" class="section-label">Areas</h2>
+  <dl class="areas">
+    <div>
+      <dt>Verification and provenance</dt>
+      <dd>Capture-time metadata, integrity checks, confirming observations against independent footage of the same place; tracing how images travel and are reused online.</dd>
+      <dd class="refs"><a href="/work/collective-memory/">Collective Memory</a> <a href="/work/culvert/">Wiki Culverts</a></dd>
+    </div>
+    <div>
+      <dt>Geolocation and 3D reconstruction</dt>
+      <dd>Placing imagery from pixels when GPS is missing or wrong; structure-from-motion and photogrammetry from uncalibrated and archival photographs.</dd>
+      <dd class="refs"><a href="/work/collective-memory/">Collective Memory</a> <a href="/work/archive-photogrammetry/">Archival Photogrammetry</a></dd>
+    </div>
+    <div>
+      <dt>Satellite and geospatial data</dt>
+      <dd>Satellite and generative remote-sensing imagery, OpenStreetMap tiles, Google Earth Engine, LiDAR, GeoJSON, and digitized historical maps.</dd>
+      <dd class="refs"><a href="/work/satellite-image-exchange/">Satellite Image Exchange</a> <a href="/work/meandering-rio-commons/">Meandering Rio Commons</a> <a href="/work/lidar-shoreline/">LiDaR ShoreLINE</a> <a href="/work/dem-film/">DEM film</a></dd>
+    </div>
+    <div>
+      <dt>Computer vision on open sources</dt>
+      <dd>Detection and tracking on public livestreams; face and licence-plate de-identification across photo and video at dataset scale.</dd>
+      <dd class="refs"><a href="/work/bovine-weather-model/">Bovine Weather Model</a> <a href="/work/collective-memory/">Collective Memory</a></dd>
+    </div>
+    <div>
+      <dt>AI, misinformation and on-chain data</dt>
+      <dd>LLM assistants reasoning over networks of news sources; how AI inherits bias from its sources; smart contracts, subgraph indexing and brute-force key search on Ethereum.</dd>
+      <dd class="refs"><a href="/work/news-currencies/">News Currencies</a> <a href="/work/searching-for-null/">Searching for Null</a></dd>
+    </div>
+    <div>
+      <dt>Fieldwork and ethnography</dt>
+      <dd>Field surveys, interviews and documentation — from 1,200 culverts in Vermont to the US–Mexico border and COP26; capture tools designed for contributors documenting their own surroundings.</dd>
+      <dd class="refs"><a href="/work/collective-memory/">Collective Memory</a> <a href="/work/culvert/">Wiki Culverts</a> <a href="/work/meandering-rio-commons/">Meandering Rio Commons</a> <a href="/work/into-the-oceanic/">Into the Oceanic</a></dd>
+    </div>
+    <div>
+      <dt>Sound and sensing</dt>
+      <dd>Field recording, sound design and original scores; sensor-driven and robotic systems; listening as a way of documenting a place alongside the image.</dd>
+      <dd class="refs"><a href="/work/the-cavalry/">The Cavalry</a> <a href="/work/dem-film/">DEM film</a> <a href="/work/cyano-bot/">Cyano-Bot</a></dd>
+    </div>
+    <div>
+      <dt>Data economics and ethical ground truth</dt>
+      <dd>Consent, provenance and contributor remuneration in the production of training data; markets, tokens and prediction as objects of critique.</dd>
+      <dd class="refs"><a href="/work/collective-memory/">Collective Memory</a> <a href="/work/bovine-weather-model/">Bovine Weather Model</a> <a href="/work/searching-for-null/">Searching for Null</a></dd>
+    </div>
+  </dl>
+</section>
+
+<section aria-labelledby="public">
+  <h2 id="public" class="section-label">Public data and code</h2>
+  <ul class="links-list">
+    <li><a href="https://huggingface.co/datasets/collectivememory/cm-gaza">cm-gaza</a> <span>Verified in-the-wild phone footage with capture metadata, pixel-match graph and SfM example · Hugging Face</span></li>
+    <li><a href="https://huggingface.co/datasets/collectivememory/us-malls-public">US Malls</a> <span>Indoor walks with camera poses, metric depth and a relocalization benchmark · Hugging Face</span></li>
+    <li><a href="https://posheadig.github.io/Rio-Meander-Website/data_directory.html">Rio Meander GeoJSON</a> <span>Open historical river-channel data · GitHub Pages</span></li>
+    <li><a href="https://github.com/posheadig/Critical-Data-Framework">Critical Data Framework</a> <span>Blockchain and AI data framework · GitHub</span></li>
+    <li><a href="https://github.com/posheadig/dadasSubGraph">dadasSubGraph</a> <span>Custom subgraph for on-chain analytics · GitHub</span></li>
+    <li><a href="https://github.com/posheadig/0/tree/main">0</a> <span>Searching for Null — key search and visualization · GitHub</span></li>
+  </ul>
+</section>
+
+<section aria-labelledby="teaching">
+  <h2 id="teaching" class="section-label">Teaching</h2>
+  <ul class="links-list">
+    <li>AI &amp; Design <span>China Academy of Art, Visiting Professor Fellow, 2023</span></li>
+    <li>GIS &amp; Mapping Ethics <span>Ohio State University, 2022</span></li>
+    <li>Web3 Theory &amp; Technologies <span>Shanghai University, 2022</span></li>
+    <li>Ethnography workshop, COP26 <span>Glasgow School of Art, 2021</span></li>
+  </ul>
+</section>

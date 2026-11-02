@@ -1,0 +1,5 @@
+{
+  "layout": "project.njk",
+  "permalink": "/work/{{ page.fileSlug }}/",
+  "bodyClass": "page-project"
+}

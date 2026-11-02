@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- set pageTitle = (title + " — " + site.title) if title and page.url != "/" else site.title + " — Artist & Technologist" %}
+  {%- set pageDescription = summary or description or site.description %}
+  {%- set pageImage = (("/media/" + image) if image else site.ogImage) %}
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ pageDescription | striptags }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ pageTitle }}">
+  <meta property="og:description" content="{{ pageDescription | striptags }}">
+  <meta property="og:image" content="{{ site.url }}{{ pageImage }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/css/style.css">
+  {%- if page.url == "/" %}
+  <script>
+    /* Redirect links from the previous version of the site (#/work?work=...) */
+    (function () {
+      var m = location.hash.match(/^#\/(?:work|info)\?work=([^&]+)/);
+      if (!m) return;
+      var map = {{ legacyRoutes | dump | safe }};
+      var target = map[decodeURIComponent(m[1])];
+      if (target) location.replace(target);
+    })();
+  </script>
+  {%- endif %}
+</head>
+<body class="{{ bodyClass }}">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="site-name" href="/">{{ site.title }}</a>
+    <nav aria-label="Main">
+      <ul>
+        {%- for item in site.nav %}
+        <li><a href="{{ item.url }}"{% if page.url.startsWith(item.url) %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <ul>
+      <li><a class="email" data-e="{{ site.email }}" href="/about/#contact">Email</a></li>
+      {%- for l in site.links %}
+      <li><a href="{{ l.url }}" rel="me noopener">{{ l.label }}</a></li>
+      {%- endfor %}
+    </ul>
+    <p>© {{ "" | year }} Patrick O'Shea</p>
+  </footer>
+  <script src="/js/site.js" defer></script>
+</body>
+</html>

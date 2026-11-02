@@ -1,0 +1,24 @@
+---
+layout: base.njk
+bodyClass: page-home
+---
+<section class="intro">
+  <p class="statement">Patrick O'Shea is an artist and technologist working across sensing, ethnography and machine learning. Through <a href="/research/">environmental and geospatial data</a>, satellite imagery, sound and fieldwork, he widens the modalities, geographies and perspectives from which the world is observed, with attention to the geopolitics of these systems and their use on the ground.</p>
+  <p class="statement-sub">Co-founder of <a href="/work/collective-memory/">Collective Memory</a>. Work shown at Locarno, MoMA Doc Fortnight, Ars Electronica, the CVPR AI Art Gallery and, in 2025, from orbit on the SCA* art satellite.</p>
+</section>
+
+<section class="selected" aria-labelledby="selected-heading">
+  <h2 id="selected-heading" class="section-label">Selected work</h2>
+  <ul class="cards">
+    {%- for p in collections.projects | featured %}
+    <li class="card">
+      <a href="{{ p.url }}">
+        <img src="/media/{{ p.data.thumb }}" alt="" loading="{{ 'eager' if loop.index <= 2 else 'lazy' }}" width="900" height="675">
+        <span class="card-title">{{ p.data.title }}</span>
+        <span class="card-meta">{{ p.data.discipline }} · {{ p.data.year }}</span>
+      </a>
+    </li>
+    {%- endfor %}
+  </ul>
+  <p class="more"><a href="/work/">All work →</a></p>
+</section>

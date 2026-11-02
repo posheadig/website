@@ -1,0 +1,90 @@
+{
+  "sections": [
+    {
+      "title": "Education",
+      "items": [
+        { "when": "2018–20", "what": "MFA, Art & Technology Studies", "where": "School of the Art Institute of Chicago" },
+        { "when": "2007–15", "what": "BA, Anthropology", "where": "University of Vermont" }
+      ]
+    },
+    {
+      "title": "Experience",
+      "items": [
+        { "when": "Ongoing", "what": "Co-founder, Research & Development — Collective Memory", "where": "Field capture for ethnography; verification, curation and release of ethically sourced datasets with contributor remuneration; open-source investigation in conflict zones", "url": "/work/collective-memory/" },
+        { "when": "2015–", "what": "Freelance technologist", "where": "Software development and architecture, geospatial data, ethnography, writing, project management, geomorphology, archaeology and design" },
+        { "when": "2023", "what": "Visiting Professor Fellow, AI & Design", "where": "China Academy of Art, Hangzhou" },
+        { "when": "2020–21", "what": "Guest Researcher", "where": "Land Arts of the American West, Texas Tech University" },
+        { "when": "2010–11", "what": "Field surveyor, geomorphic culvert survey", "where": "Missisquoi basin, Vermont", "url": "/work/culvert/" }
+      ]
+    },
+    {
+      "title": "Exhibitions and broadcasts",
+      "items": [
+        { "when": "2026", "what": "CVPR 2026 AI Art Gallery", "where": "Computer Vision Foundation — Satellite Image Exchange, with hua xi zi", "url": "/work/satellite-image-exchange/" },
+        { "when": "2025", "what": "SCA* art satellite, low Earth orbit", "where": "Xu Bing Space Art Residency, Star Chain of Arts Project — Satellite Image Exchange", "url": "/work/satellite-image-exchange/" },
+        { "when": "2024", "what": "Reverse TarPit", "where": "Brooklyn Arts Cluster, New York" },
+        { "when": "2023", "what": "The Wrong Biennale", "where": "Onassis ONX Studio, New York" },
+        { "when": "2021", "what": "The Fish Hotel / Chemical [Re]Actions", "where": "Goethe-Institut, Chicago" },
+        { "when": "2020", "what": "Ars Electronica Garden (co-curator, exhibitor)", "where": "Linz / online" },
+        { "when": "2020", "what": "Messages from the Anthropocene", "where": "Flynndog Gallery, Burlington, VT" },
+        { "when": "2020", "what": "ATS@50", "where": "School of the Art Institute of Chicago" },
+        { "when": "2019", "what": "NØ Exhibition", "where": "NØ School, Nevers, France" },
+        { "when": "2019", "what": "Future Conditions", "where": "School of the Art Institute of Chicago" },
+        { "when": "2017", "what": "New City Gallery", "where": "Burlington, VT" }
+      ]
+    },
+    {
+      "title": "Film — The Cavalry (producer, sound, original score)",
+      "items": [
+        { "when": "2025", "what": "Acquired by Duke University Libraries", "url": "https://find.library.duke.edu/catalog/DUKE99119785721808501" },
+        { "when": "2025", "what": "MoMA Doc Fortnight", "where": "New York premiere" },
+        { "when": "2025", "what": "DMZ International Documentary Film Festival; Nashville Film Festival; Society for Visual Anthropology Film & Media Festival; International Filmfest Bremen; FICCI Cartagena; Prague Film Festival" },
+        { "when": "2025", "what": "COSMIC RAYS; Kino Athens; Punta del Este Jewish Film Festival; Artist Film Festival at Artport; Bridge Video's Festival of Holes; Portland EcoFilm Festival" },
+        { "when": "2024", "what": "Locarno Film Festival, Pardi di Domani", "where": "World premiere" },
+        { "when": "2024", "what": "Vancouver International Film Festival", "where": "North American premiere" },
+        { "when": "2024", "what": "FIDBA, Buenos Aires", "where": "South American premiere" },
+        { "when": "2024", "what": "Antimatter [media art]", "where": "Victoria, BC" }
+      ]
+    },
+    {
+      "title": "Collaborations",
+      "items": [
+        { "when": "2020–22", "what": "Meandering Rio Commons", "where": "With José Villanueva and Land Arts of the American West", "url": "/work/meandering-rio-commons/" },
+        { "when": "2021", "what": "COP26: Into the Oceanic", "where": "Monitor and ethnographer, with Elizabeth Ogilvie, Robert Page and Glasgow School of Art", "url": "/work/into-the-oceanic/" }
+      ]
+    },
+    {
+      "title": "Teaching and workshops",
+      "items": [
+        { "when": "2023", "what": "AI & Design", "where": "China Academy of Art (Visiting Professor Fellow)" },
+        { "when": "2022", "what": "Web3 Theory & Technologies", "where": "Shanghai University" },
+        { "when": "2022", "what": "GIS & Mapping Ethics", "where": "Ohio State University" },
+        { "when": "2021", "what": "Ethnography workshop, COP26", "where": "Glasgow School of Art" },
+        { "when": "2018–20", "what": "Teaching Assistant", "where": "School of the Art Institute of Chicago" }
+      ]
+    },
+    {
+      "title": "Residencies",
+      "items": [
+        { "when": "2025", "what": "Xu Bing Space Art Residency", "where": "Star Chain of Arts Project (SCA* satellite)" },
+        { "when": "2019", "what": "NØ School", "where": "Nevers, France" },
+        { "when": "2017", "what": "Vermont Studio Center", "where": "Johnson, VT" }
+      ]
+    },
+    {
+      "title": "Publications and press",
+      "items": [
+        { "when": "2022", "what": "Rio Meander Map (with José Villanueva)", "where": "Southwest Contemporary, vol. 5 — Collectivity + Collaboration" },
+        { "when": "2022", "what": "Al río / To the River, Zoe Leonard", "where": "Contribution via the Rio Meander project" },
+        { "when": "2018", "what": "Review by Leah Gallant", "where": "F Newsmagazine" }
+      ]
+    },
+    {
+      "title": "Awards",
+      "items": [
+        { "when": "2018–20", "what": "New Artist Society Full Merit Fellowship", "where": "School of the Art Institute of Chicago" },
+        { "when": "2020", "what": "Student Leadership Award", "where": "School of the Art Institute of Chicago" }
+      ]
+    }
+  ]
+}

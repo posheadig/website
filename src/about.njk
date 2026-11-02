@@ -1,0 +1,36 @@
+---
+layout: base.njk
+title: About
+permalink: /about/
+bodyClass: page-about
+---
+<header class="page-header">
+  <h1>About</h1>
+</header>
+
+<div class="about">
+  <div class="prose">
+    <p class="lead">Patrick O'Shea is an artist and technologist whose practice concerns how the world is sensed and recorded: through satellite and environmental data, computer vision, sound and ethnographic fieldwork.</p>
+
+    <p>Trained in anthropology, he approaches technical systems as situated practices, shaped by the ecologies they measure, the geopolitics of who observes whom, and the economies through which data is produced. His work broadens the modalities and perspectives that inform these systems while staying grounded in their practical and ethnographic use. It spans satellite and space art, geospatial analysis, computer vision, robotics, software, sound and documentary film.</p>
+
+    <p>His projects and collaborations have been presented at the <a href="https://www.locarnofestival.ch/">Locarno Film Festival</a>, <a href="https://www.moma.org/calendar/events/10330">MoMA Doc Fortnight</a>, <a href="https://ars.electronica.art/">Ars Electronica</a>, the <a href="https://www.thecvf-art.com/">CVPR AI Art Gallery</a>, <a href="https://thewrong.org/">The Wrong Biennale</a>, <a href="https://www.onassis.org/initiatives/onassis-onx">Onassis ONX Studio</a>, <a href="https://viff.org/">Vancouver International Film Festival</a>, <a href="https://fidba.org/">FIDBA</a> and <a href="https://antimatter.squarespace.com/">Antimatter [media art]</a>, and in <a href="https://southwestcontemporary.com/rio-meander-map/">Southwest Contemporary</a> and Zoe Leonard's <em>Al río / To the River</em>. In 2025 his work with hua xi zi was broadcast from low Earth orbit on the SCA* art satellite through the Xu Bing Space Art Residency.</p>
+
+    <p>He is co-founder of <a href="/work/collective-memory/">Collective Memory</a>, where he leads research and development, from a capture application designed as an instrument of field ethnography, through verification and curation, to datasets released under a model of contributor remuneration. The work aims at an ethically sourced ground truth for machine learning and supports open-source investigation in conflict zones. He also works independently across software, geospatial data, sound and ethnographic research.</p>
+
+    <p>He holds an MFA in Art &amp; Technology Studies from the School of the Art Institute of Chicago, where he received the New Artist Society Full Merit Fellowship, and a BA in Anthropology from the University of Vermont. He has been a Visiting Professor Fellow in AI &amp; Design at the China Academy of Art and has led workshops at Shanghai University, Ohio State University and Glasgow School of Art (COP26).</p>
+
+    <p><a href="/cv/">Full CV →</a></p>
+  </div>
+
+  <aside class="contact" id="contact" aria-labelledby="contact-heading">
+    <h2 id="contact-heading" class="section-label">Contact</h2>
+    <ul>
+      <li><a class="email" data-e="{{ site.email }}" data-reveal href="#contact">Show email address</a></li>
+      {%- for l in site.links %}
+      <li><a href="{{ l.url }}" rel="me noopener">{{ l.label }}</a></li>
+      {%- endfor %}
+      <li><a href="https://huggingface.co/collectivememory">Collective Memory on Hugging Face</a></li>
+    </ul>
+  </aside>
+</div>

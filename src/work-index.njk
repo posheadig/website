@@ -1,0 +1,29 @@
+---
+layout: base.njk
+title: Work
+permalink: /work/
+bodyClass: page-index
+description: Artworks, films, research projects and writing by Patrick O'Shea, 2017 to the present.
+---
+<header class="page-header">
+  <h1>Work</h1>
+  <div class="filters" role="group" aria-label="Filter" hidden>
+    <button type="button" data-filter="all" aria-pressed="true">All</button>
+    <button type="button" data-filter="art" aria-pressed="false">Art &amp; film</button>
+    <button type="button" data-filter="research" aria-pressed="false">Research &amp; data</button>
+    <button type="button" data-filter="writing" aria-pressed="false">Writing</button>
+  </div>
+</header>
+
+<ol class="index">
+  {%- for p in collections.projects %}
+  <li data-kinds="{{ p.data.kinds | join(' ') }}">
+    <a href="{{ p.url }}">
+      <span class="index-thumb">{% if p.data.thumb %}<img src="/media/{{ p.data.thumb }}" alt="" loading="lazy" width="900" height="675">{% endif %}</span>
+      <span class="index-year">{{ p.data.year }}</span>
+      <span class="index-title">{{ p.data.title }}</span>
+      <span class="index-kind">{{ p.data.discipline }}</span>
+    </a>
+  </li>
+  {%- endfor %}
+</ol>
